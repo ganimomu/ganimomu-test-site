@@ -242,14 +242,14 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form>
+          <form name="contact" method="POST" data-netlify="true">
             <div class="mb-3">
               <label for="name" class="form-label">Nombre</label>
               <input type="text" name="name" value="" class="form-control" placeholder="Ingresar nombre completo..." />
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" name="email" value="" class="form-control" placeholder="Ingresar Email..." />
+              <input type="email" name="_replyto" value="" class="form-control" placeholder="Ingresar Email..." />
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Mensaje</label>
@@ -257,10 +257,10 @@
                 placeholder="Ingresar mensaje..."></textarea>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+              <button type="submit" class="btn btn-success">
                 Enviar
               </button>
-            </div>
+            </div>  
           </form>
         </div>
       </div>
