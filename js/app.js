@@ -88,11 +88,6 @@ $("#filter-button").on("click", function () {
         } else {
           $(".alert").alert("close");
           salesApp.carList = cars;
-/*           salesApp.yearSelected = "";
-          salesApp.brandSelected = "";
-          salesApp.modelSelected = "";
-          salesApp.statusSelected = "";
-          salesApp.models = ""; */
         }
       },
     });
@@ -125,6 +120,11 @@ $("#filter-clear").on("click", function () {
     url: "https://ha.edu.uy/api/cars",
     success: function (cars) {
       salesApp.carList = cars;
+      salesApp.yearSelected = "";
+      salesApp.brandSelected = "";
+      salesApp.modelSelected = "";
+      salesApp.statusSelected = "";
+      salesApp.models = "";
     },
   });
 });
