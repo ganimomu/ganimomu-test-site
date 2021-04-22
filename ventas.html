@@ -78,14 +78,14 @@
             <hr>
             <div id="form-filter">
               <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label fw-bold">Año</label><button type="button" class="btn" id="filter-clear-year"><i class="fas fa-times"></i></button>
+                <label for="exampleFormControlInput1" class="form-label fw-bold">Año</label>
                 <select id="year-selector" class="form-select" aria-label="Default select example" v-model="yearSelected" id="year-selected">
                   <option disabled selected value="">Seleccionar...</option>
                   <option v-for="year in yearList" v-bind:value="year">{{year}}</option>
                 </select>
               </div>
               <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label fw-bold">Marca</label><button type="button" class="btn" id="filter-clear-brand"><i class="fas fa-times"></i></button>
+                <label for="exampleFormControlInput1" class="form-label fw-bold">Marca</label>
                 <select id="brand-selector" class="form-select" aria-label="Default select example" v-model="brandSelected" id="brand-selected">
                   <option disabled selected value="">Seleccionar...</option>
                   <option v-for="brand in brands" v-bind:value="brand">{{brand}}</option>
@@ -93,7 +93,7 @@
               </div>
 
               <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label fw-bold">Modelo</label><button type="button" class="btn" id="filter-clear-model"><i class="fas fa-times"></i></button>
+                <label for="exampleFormControlInput1" class="form-label fw-bold">Modelo</label>
                 <select id="model-selector" class="form-select" aria-label="Default select example" v-model="modelSelected" id="model-selected">
                   <option disabled selected value="">Seleccionar...</option>
                   <option v-for="model in models" v-bind:value="model">{{model}}</option>
@@ -101,7 +101,7 @@
               </div>
 
               <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label fw-bold">Estado</label><button type="button" class="btn" id="filter-clear-status"><i class="fas fa-times"></i></button>
+                <label for="exampleFormControlInput1" class="form-label fw-bold">Estado</label>
                 <select id="status-selector" class="form-select" aria-label="Default select example" v-model="statusSelected" id="status-selected">
                   <option disabled selected value="">Seleccionar...</option>
                   <option v-bind:value="1">Nuevo</option>
