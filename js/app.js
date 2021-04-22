@@ -119,7 +119,7 @@ $("#brand-selector").change(function(){
   }
 });
 
-/* 
+
 $("#filter-clear").on("click", function () {
   $.ajax({
     url: "https://ha.edu.uy/api/cars",
@@ -127,7 +127,7 @@ $("#filter-clear").on("click", function () {
       salesApp.carList = cars;
     },
   });
-}); */
+});
 
 $("#toggle-price").on("click", function () {
   if (salesApp.currencySelector === "usd") {
